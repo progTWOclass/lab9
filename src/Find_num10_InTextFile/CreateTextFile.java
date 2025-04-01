@@ -5,6 +5,7 @@ import java.io.PrintWriter;
 
 public class CreateTextFile {
     public static void main (String[] args){
+        //creating the text file that stores integer numbers as string
         try{
             PrintWriter printNumber = new PrintWriter(new FileOutputStream("numbers.txt"));
 

@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 public class ReadBinaryFile {
     public static void main (String [] args){
+        //reading the binary file that we just created and find the max and min value
         try{
             ObjectInputStream inputStream = new ObjectInputStream(new FileInputStream("Lab9Q2.dat"));
 
@@ -23,6 +24,7 @@ public class ReadBinaryFile {
             }
             System.out.println("min number : " + minNumber);
             System.out.println("max number: " + maxNumber);
+            inputStream.close();
 
         }catch(IOException iOE){
             System.err.println("file does not exist");

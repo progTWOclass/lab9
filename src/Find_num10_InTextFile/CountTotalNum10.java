@@ -5,14 +5,15 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 public class CountTotalNum10 {
     public static void main(String[] args){
+        //reading the text file that we created and start
         try{
-
             BufferedReader reader = new BufferedReader(new FileReader("numbers.txt"));
             String textFile;
             int counter = 0;
             while((textFile = reader.readLine()) != null){
                 System.out.println(textFile);
 
+                //we can also use StringTokenizer
                 //trim remove beginning and end spaces if it exists
                 //Matches one or more occurrences Any whitespace character (space, tabs, newline)
                 String[] splitNum = textFile.trim().split("\\s+");

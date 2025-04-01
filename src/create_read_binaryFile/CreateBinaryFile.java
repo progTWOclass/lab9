@@ -6,6 +6,7 @@ import java.util.Scanner;
 public class CreateBinaryFile {
     public static void main(String[] args){
 
+        //creating a binary file with integer numbers
         Scanner input = new Scanner(System.in);
         ObjectOutputStream outputStream = null;
         try{
